@@ -3,14 +3,15 @@
 A library for giving you the exception handling you've always wanted. 
 
 ##Usage
-
-1. Add the following static import: 
-
+Add the following static import: 
 ```java 
 import static com.techmale.exception_extension.ExceptionExtensions;
 ```
-2. All Java exceptions are extended by default so use the Exceptions in the following way, Checked and Unchecked: 
+
+All Java exceptions are extended by default so use the Exceptions in the following way, Checked and Unchecked: 
 ```java
+IllegalArgumentException.when(condition, message (StringFormat), args (For StringFormat));
+// e.g.
 IllegalArgumentException.when(myVar.equals("Foo"), "Bad value for myVar: %s", myvar);
 ```
 
