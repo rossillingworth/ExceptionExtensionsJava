@@ -8,11 +8,12 @@ Add the following static import:
 import static com.techmale.exception_extension.ExceptionExtensions;
 ```
 
-All Java exceptions are extended by default so use the Exceptions in the following way, Checked and Unchecked: 
+In it's simplest form: 
 ```java
-IllegalArgumentException.when(condition, message (StringFormat), args (For StringFormat));
+IllegalArgumentException.when(condition, message);
+
 // e.g.
-IllegalArgumentException.when(myVar.equals("Foo"), "Bad value for myVar: %s", myvar);
+IllegalArgumentException.when(myVar.equals("Foo"), "Bad value for myVar");
 ```
 
 
