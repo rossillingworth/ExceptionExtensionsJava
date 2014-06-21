@@ -1,8 +1,8 @@
-#Exception Extensions
+##Exception Extensions
 
 A library for giving you the exception handling you've always wanted. 
 
-##Usage
+###Usage
 Add the following static import: 
 ```java 
 import static com.techmale.exception_extension.ExceptionExtensions;
@@ -16,8 +16,8 @@ IllegalArgumentException.when(myVar.equals("Foo"), "Bad value for myVar: %s", my
 ```
 
 
-##Extending
-###Adding your own Exceptions
+###Extending
+####Adding your own Exceptions
 ```java
 import com.techmale.exception_extension.ExceptionExtensions;
 
@@ -28,7 +28,7 @@ public class MyApplicationExceptionExtensions{
 }
 ```
 
-###Adding extra functionality
+####Adding extra functionality
 ```java
 import com.techmale.exception_extension.ExceptionExtensions;
 
@@ -48,7 +48,6 @@ public class MyExceptionExtensions<T extends Exception> extends ExceptionExtensi
 ```
 
 
-##Authors
-
-Ross Illingworth
-James Gee
+###Authors
+- Ross Illingworth
+- James Gee
