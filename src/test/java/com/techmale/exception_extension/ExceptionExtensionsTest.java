@@ -5,7 +5,8 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.techmale.exception_extension.ExceptionExtensions.*;
+import static com.techmale.exception_extension.ExceptionExtensions.IO.*;
+import static com.techmale.exception_extension.ExceptionExtensions.Lang.*;
 
 public class ExceptionExtensionsTest {
 
